@@ -1,0 +1,29 @@
+-const fiv= pokémon.filter( p => p.id % 3 === 0 );
+console.log(fiv);
+
+-const fiv= pokémon.filter( p => p.types == "fire" );
+console.log(fiv);
+
+-const fiv = pokémon.filter( p => p.types.length >1 );
+console.log(fiv);
+
+-const asdnnames = pokémon.map( p => p.name )
+console.log(asdnnames);
+
+-const asdnnames = pokémon.filter(p => p.id >99).map( p => p.name )
+console.log(asdnnames);
+
+-const asdnnames = pokémon.filter(p => p.types =="poison").map( p => p.name )
+console.log(asdnnames);
+
+-const asdnnames = pokémon.filter(p => p.types[1] =="flying").map( p => p.types[0] )
+console.log(asdnnames);
+
+
+-const asdnnames = pokémon.filter(p => p.types =="normal")
+let counter = 0;
+for (const obj of asdnnames) {
+ counter++;
+}
+console.log(counter);
+
